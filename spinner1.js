@@ -11,16 +11,9 @@ const startLoopedAnimation = (frames, interval) => {
     }, previous);
     return interval + previous;
   }, interval);
-
-  process.stdout.write("\n");
 };
 
 const interval = 100;
-const frames = [
-  '\r|   ',
-  '\r/   ',
-  '\r-   ',
-  '\r\\   '
-];
+const frames = ["\r|   ", "\r/   ", "\r-   ", "\r\\   "];
 
 startLoopedAnimation(frames, interval);
